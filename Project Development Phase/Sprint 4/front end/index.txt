@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ABC COLLEGE OF ENGINEERING</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<style>
+body{ 
+background-image: url(https://unsplash.com/photos/8CqDvPuo_kI); 
+
+background-size: cover;
+background-repeat: no-repeat;
+}
+</style>
+</head>
+<body>
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "6142ef00-6897-4a40-aee4-9f2f0229ed66", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "6dc68021-e072-4318-bba0-b5ea20a41482", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+</body>
+</html>
